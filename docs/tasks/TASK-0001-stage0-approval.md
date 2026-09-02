@@ -100,9 +100,9 @@ Status: Implemented locally; enforcement incomplete.
 - Required scaffolding, standards, formatter/static-analysis configuration, GitHub templates, CI definitions and validators were created without production code.
 - ADR-0002 is accepted and supersedes the earlier planned `packages/application-packs/` layout with `inspection-packages/`.
 - CODEOWNERS assigns `@zamriares`, explicitly approved by Zamri Ares on 2026-09-02.
-- The local Git repository and empty GitHub remote now exist. GitHub rulesets, CI execution, SBOM workflow execution and signed release evidence remain NOT VERIFIED pending the initial push and remote enforcement evidence.
+- The local Git repository and public GitHub remote now contain the TASK-0001 bootstrap baseline. The first hosted Stage 0 validation passed. GitHub rulesets, SBOM workflow execution and signed release evidence remain NOT VERIFIED pending remote enforcement and workflow evidence.
 
-Local evidence recorded on 2026-09-01:
+Local and hosted evidence recorded on 2026-09-01 and 2026-09-02:
 
 - PASS: shell syntax for both validation scripts.
 - PASS: Node syntax for both validation modules and the ESLint/Prettier configurations.
@@ -115,5 +115,7 @@ Local evidence recorded on 2026-09-01:
 - PASS: no implementation file exists in the scaffolded implementation roots.
 - PASS: the conservative local secret-pattern scan returned no matches.
 - PASS: `bash tools/validate-repository.sh` after the approved `@zamriares` CODEOWNERS assignment.
-- PASS: local Git repository on `main` with authorised `origin` set to `https://github.com/zamriares/VectorVisionIntel.git`; initial history is pending.
-- UNAVAILABLE: GitHub Actions, ruleset evidence, Go, Ruff, mypy, pytest, ESLint, Prettier, TypeScript, actionlint, ShellCheck, markdownlint, Gitleaks, Trivy, Syft and Cosign execution.
+- PASS: local Git repository on `main` with authorised `origin` set to `https://github.com/zamriares/VectorVisionIntel.git`.
+- PASS: bootstrap commit `4a7cbe522723134d418005f088b048302e2b2a86` pushed to `origin/main` on 2026-09-02.
+- PASS: hosted `Stage 0 validation` run `33589098380` completed successfully for the bootstrap commit.
+- UNAVAILABLE: GitHub ruleset evidence, Go, Ruff, mypy, pytest, ESLint, Prettier, TypeScript, actionlint, ShellCheck, markdownlint, Gitleaks history scanning, Trivy, Syft and Cosign execution.
