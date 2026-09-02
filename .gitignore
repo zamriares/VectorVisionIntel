@@ -1,0 +1,47 @@
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Build and test output
+build/
+cmake-build-*/
+dist/
+coverage/
+.coverage
+htmlcov/
+test-results/
+
+# C++
+compile_commands.json
+
+# Go
+*.test
+*.out
+
+# Node and TypeScript
+node_modules/
+.pnpm-store/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+# Local secrets and generated artefacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+artifacts/
+sbom*.json
+checksums*.txt

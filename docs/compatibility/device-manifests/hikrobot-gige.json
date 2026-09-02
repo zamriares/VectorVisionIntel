@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0", "manifest_id": "hikrobot-gige", "manifest_version": "0.1.0",
+  "classification": "REFERENCE_HARDWARE", "validation_status": "TARGET", "selection_status": "PENDING_ENGINEERING_SELECTION",
+  "manufacturer": "Hangzhou Hikrobot Co., Ltd.", "product_family": "GenICam-compatible GigE global-shutter area-scan",
+  "full_model_number": "PENDING ENGINEERING SELECTION", "firmware_version": "PENDING ENGINEERING SELECTION",
+  "driver_or_sdk": { "name": "Hikrobot machine-vision SDK or vendor-neutral GenTL producer", "version": "PENDING ENGINEERING SELECTION" },
+  "operating_system": "PENDING ENGINEERING SELECTION", "protocols": ["GenICam", "GigE Vision"],
+  "licensing_status": "PENDING LICENCE REVIEW", "lifecycle_status": "PENDING MANUFACTURER CONFIRMATION FOR SELECTED MODEL",
+  "source_datasheets": [{ "title": "Hikrobot GigE Area Scan Camera User Manual", "url": "https://www.hikrobotics.com/en2/Hikrobotics/Machine%20Vision/01%20Product/%E5%B7%A5%E4%B8%9A%E9%9D%A2%E9%98%B5%E7%9B%B8%E6%9C%BA/CS/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/UD26223B_GigE%20Area%20Scan%20Camera%20User%20Manual_V3.4.50_20211117.pdf", "retrieved_date": "2026-09-01" }],
+  "required_evidence_gates": { "camera_discovery": "NOT_RUN", "acquisition": "NOT_RUN", "triggering": "NOT_RUN", "parameter_control": "NOT_RUN", "plc_exchange": "NOT_APPLICABLE", "reconnection_recovery": "NOT_RUN", "performance": "BLOCKED", "timestamp_correlation": "NOT_RUN", "security": "NOT_RUN", "soak_72_hour": "NOT_RUN" },
+  "limitations": ["Exact model, global-shutter sensor, resolution, lens and SDK/GenTL path require engineering selection.", "No compatibility or certification claim."]
+}

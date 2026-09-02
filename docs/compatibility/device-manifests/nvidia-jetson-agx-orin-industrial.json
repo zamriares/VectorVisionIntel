@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0", "manifest_id": "nvidia-jetson-agx-orin-industrial", "manifest_version": "0.1.0",
+  "classification": "REFERENCE_HARDWARE", "validation_status": "TARGET", "selection_status": "PENDING_ENGINEERING_SELECTION",
+  "manufacturer": "NVIDIA Corporation", "product_family": "Jetson AGX Orin Industrial",
+  "full_model_number": "Jetson AGX Orin Industrial module; production part number and carrier PENDING ENGINEERING SELECTION", "firmware_version": "PENDING ENGINEERING SELECTION",
+  "driver_or_sdk": { "name": "NVIDIA JetPack, CUDA and TensorRT", "version": "PENDING ENGINEERING SELECTION" },
+  "operating_system": "NVIDIA Ubuntu-based system image version PENDING ENGINEERING SELECTION", "protocols": ["CUDA", "TensorRT", "Ethernet", "PCIe"],
+  "licensing_status": "PENDING LICENCE REVIEW", "lifecycle_status": "NVIDIA lists Jetson AGX Orin Industrial availability through July 2033; recheck at selection and release",
+  "source_datasheets": [{ "title": "NVIDIA Jetson AGX Orin product page", "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/", "retrieved_date": "2026-09-01" }, { "title": "NVIDIA Jetson Product Lifecycle", "url": "https://developer.nvidia.com/embedded/lifecycle", "retrieved_date": "2026-09-01" }],
+  "required_evidence_gates": { "camera_discovery": "NOT_APPLICABLE", "acquisition": "NOT_APPLICABLE", "triggering": "NOT_APPLICABLE", "parameter_control": "NOT_APPLICABLE", "plc_exchange": "NOT_APPLICABLE", "reconnection_recovery": "NOT_RUN", "performance": "BLOCKED", "timestamp_correlation": "NOT_RUN", "security": "NOT_RUN", "soak_72_hour": "NOT_RUN" },
+  "limitations": ["Production carrier, cooling, power, NVMe, network interfaces, TPM/security capability and JetPack version are not selected.", "Developer kits are not production reference hardware.", "No compatibility or certification claim."]
+}

@@ -1,0 +1,36 @@
+name: Bounded engineering task
+description: Propose work that is traceable to an authorised phase and approved task.
+title: "[TASK] "
+labels: ["task"]
+body:
+  - type: input
+    id: phase
+    attributes:
+      label: Authorised phase
+      placeholder: Stage 0
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective and bounded outcome
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: In scope and out of scope
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks, dependencies, and rollback
+    validations:
+      required: true

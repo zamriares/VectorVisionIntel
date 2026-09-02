@@ -1,0 +1,32 @@
+name: Stage 0 SBOM evidence
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repository-sbom:
+    name: Generate repository SBOM
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        # actions/checkout v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Generate and retain SPDX JSON SBOM
+        # anchore/sbom-action v0.24.2
+        uses: anchore/sbom-action@3ad7283483fc7af8ff2b4ea19663c2d5ca935e26
+        with:
+          path: .
+          format: spdx-json
+          output-file: sbom.spdx.json
+          artifact-name: stage0-repository-sbom.spdx.json
+          upload-artifact: true
+          upload-artifact-retention: 14
+          upload-release-assets: false
+      - name: Record SBOM checksum in workflow evidence
+        run: sha256sum sbom.spdx.json

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0", "manifest_id": "x86-ubuntu-rtx-edge", "manifest_version": "0.1.0",
+  "classification": "REFERENCE_HARDWARE", "validation_status": "TARGET", "selection_status": "PENDING_ENGINEERING_SELECTION",
+  "manufacturer": "PENDING ENGINEERING SELECTION", "product_family": "Industrial x86-64 production edge with NVIDIA RTX professional GPU",
+  "full_model_number": "Industrial PC and NVIDIA RTX professional GPU PENDING ENGINEERING SELECTION", "firmware_version": "BIOS/UEFI, TPM and device firmware PENDING ENGINEERING SELECTION",
+  "driver_or_sdk": { "name": "NVIDIA production driver, CUDA and TensorRT", "version": "PENDING ENGINEERING SELECTION" },
+  "operating_system": "Ubuntu LTS release and image PENDING ENGINEERING SELECTION", "protocols": ["CUDA", "TensorRT", "Ethernet", "PCIe", "TPM 2.0"],
+  "licensing_status": "PENDING LICENCE AND SUPPORT REVIEW", "lifecycle_status": "PENDING MANUFACTURER CONFIRMATION FOR INDUSTRIAL PC AND GPU",
+  "source_datasheets": [{ "title": "Ubuntu release lifecycle", "url": "https://ubuntu.com/about/release-cycle", "retrieved_date": "2026-09-01" }, { "title": "NVIDIA RTX professional product literature", "url": "https://www.nvidia.com/en-us/products/workstations/product-literature/", "retrieved_date": "2026-09-01" }],
+  "required_evidence_gates": { "camera_discovery": "NOT_APPLICABLE", "acquisition": "NOT_APPLICABLE", "triggering": "NOT_APPLICABLE", "parameter_control": "NOT_APPLICABLE", "plc_exchange": "NOT_APPLICABLE", "reconnection_recovery": "NOT_RUN", "performance": "BLOCKED", "timestamp_correlation": "NOT_RUN", "security": "NOT_RUN", "soak_72_hour": "NOT_RUN" },
+  "limitations": ["Exact industrial PC, CPU, RTX GPU, NVMe, TPM, NICs, Ubuntu image, kernel and NVIDIA stack are unselected.", "No compatibility or certification claim."]
+}

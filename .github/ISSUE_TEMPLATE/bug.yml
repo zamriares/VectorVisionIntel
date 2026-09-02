@@ -1,0 +1,30 @@
+name: Defect report
+description: Record a reproducible defect without including sensitive production data.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction and environment
+      description: Remove credentials, customer identifiers, and proprietary images.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Safety, production, security, and traceability impact
+    validations:
+      required: true
