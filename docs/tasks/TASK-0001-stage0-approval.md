@@ -95,12 +95,12 @@ All planned public contracts; no implemented interface may exist at this stage.
 
 ## Repository-baseline result
 
-Status: Implemented and hosted; ADR-0003 settings verified and protected squash merge pending.
+Status: Implemented, hosted, and protected governance path verified.
 
 - Required scaffolding, standards, formatter/static-analysis configuration, GitHub templates, CI definitions and validators were created without production code.
 - ADR-0002 is accepted and supersedes the earlier planned `packages/application-packs/` layout with `inspection-packages/`.
 - CODEOWNERS assigns `@zamriares`, explicitly approved by Zamri Ares on 2026-09-02.
-- The local Git repository and public GitHub remote contain the TASK-0001 baseline. Authenticated readback verified ADR-0003 solo-maintainer settings: zero required approvals, required CODEOWNER review disabled, last-push approval disabled, and strict required checks, conversation resolution, linear history, admin enforcement, force-push/deletion prevention and squash-only merge retained. Protected merge evidence remains `NOT VERIFIED`. Signed release evidence remains outside the authorised Stage 0 workflow scope.
+- The local Git repository and public GitHub remote contain the TASK-0001 baseline. Authenticated readback verified ADR-0003 solo-maintainer settings: zero required approvals, required CODEOWNER review disabled, last-push approval disabled, and strict required checks, conversation resolution, linear history, admin enforcement, force-push/deletion prevention and squash-only merge retained. Pull request `#1` exercised the protected squash-merge path successfully. Signed release evidence remains outside the authorised Stage 0 workflow scope.
 
 Local and hosted evidence recorded from 2026-09-01 through 2026-09-03:
 
@@ -126,4 +126,6 @@ Local and hosted evidence recorded from 2026-09-01 through 2026-09-03:
 - SUPERSEDED: independent code-owner approval. ADR-0003 accepted solo-maintainer governance on 2026-09-03. GitHub authors cannot approve their own pull requests, so hosted protection retains pull requests and mandatory checks while setting required approvals to zero and disabling required CODEOWNER review and last-push approval. The following authenticated readback verifies this hosted change.
 - PASS: authenticated 2026-09-03 hosted readback confirmed zero required approvals, required CODEOWNER review disabled, last-push approval disabled, strict required checks, resolved conversations, linear history, admin enforcement, and disabled force-push/deletion.
 - PASS: hosted Stage 0 validation run `33695509663` completed all four required checks successfully for pull-request head `ff4e3b0ec198eff13f65a15ed79046740572322d`.
+- PASS: hosted Stage 0 validation run `33695896174` completed all four required checks successfully for final pull-request head `335540e8eb979b6ae3995517d2a2c844b539defe`.
+- PASS: pull request `#1` was squash-merged through protected `main` as `190b0562341fa95ad765c4fcdc8d00e4d356787a` after exact-head verification.
 - UNAVAILABLE locally: Go, Ruff, mypy, pytest, ESLint, Prettier, TypeScript, actionlint, ShellCheck, markdownlint, Gitleaks, Trivy, Syft and Cosign execution.

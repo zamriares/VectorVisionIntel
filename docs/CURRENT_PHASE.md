@@ -17,7 +17,7 @@ Review and approve the product boundary, architecture, security/portability requ
 - Protected `main` is configured for ADR-0003 solo-maintainer governance with zero required approvals, required CODEOWNER review disabled and last-push approval disabled. Authenticated readback confirmed strict required checks, resolved conversations, linear history, admin enforcement, and force-push/deletion prevention remain enabled.
 - Pull request `#1` records governance and SBOM evidence. For evidence commit `57a046647cfafce11f52605211b6586812ec8412`, repository baseline, secret scan, vulnerability/misconfiguration scan, and dependency/licence review all passed.
 - Manual Stage 0 SBOM run `33589395444` passed. The retained SPDX JSON artifact has GitHub digest `sha256:23faee6f52567092b64382d1cd242157a2aa0b2d37883d7ee9ddc49b9adea917` and expires on 2026-09-16.
-- Pull request `#1` reports a clean merge state at head `ff4e3b0ec198eff13f65a15ed79046740572322d`; all four required checks passed in run `33695509663`. The protected squash merge has not yet been executed.
+- Pull request `#1` passed all four required checks on final head `335540e8eb979b6ae3995517d2a2c844b539defe` in run `33695896174` and was squash-merged through protected `main` as `190b0562341fa95ad765c4fcdc8d00e4d356787a`.
 - DEC-001 through DEC-007 and the mandatory hardware, protocol, recovery, security, performance and 72-hour soak evidence remain open or blocked. No hardware or site acceptance claim has been made.
 
 ## Allowed work
