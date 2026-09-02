@@ -39,6 +39,7 @@ Active Stage 0 working records:
 - `docs/ENGINEERING_STANDARDS.md` — enforceable repository, language, security and review baseline.
 - `docs/RELEASE_STANDARD.md` — versioning, SBOM, signing, upgrade and rollback baseline.
 - `docs/adr/ADR-repository-engineering-standards.md` — accepted monorepo and engineering governance decision.
+- `docs/adr/ADR-solo-codeowner-governance.md` — accepted solo-maintainer review policy and compensating controls.
 
 If documents conflict, `AGENTS.md` wins, followed by accepted ADRs, architecture, product requirements, security specification, roadmap, and task files.
 

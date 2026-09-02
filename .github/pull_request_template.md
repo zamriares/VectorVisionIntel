@@ -26,5 +26,5 @@ Task ID: <!-- TASK-NNNN -->
 ## Review
 
 - [ ] Required CI checks pass.
-- [ ] A CODEOWNER other than the author approved.
+- [ ] The sole CODEOWNER reviewed the complete final diff and recorded actual test results; all mandatory checks pass (ADR-0003 solo-maintainer mode).
 - [ ] The squash commit title references the approved task ID.
