@@ -4,7 +4,7 @@ Stage: 0
 Status: Approved — in progress  
 Owner: Zamri Ares (Product Owner and Technical Lead)  
 Dependencies: None  
-Related ADRs: ADR-0001 (`docs/adr/ADR-reference-hardware-selection.md`), ADR-0002 (`docs/adr/ADR-repository-engineering-standards.md`)  
+Related ADRs: ADR-0001 (`docs/adr/ADR-reference-hardware-selection.md`), ADR-0002 (`docs/adr/ADR-repository-engineering-standards.md`), ADR-0003 (`docs/adr/ADR-solo-codeowner-governance.md`)
 
 ## Execution approval
 
@@ -95,14 +95,14 @@ All planned public contracts; no implemented interface may exist at this stage.
 
 ## Repository-baseline result
 
-Status: Implemented and hosted; independent-review enforcement evidence pending.
+Status: Implemented and hosted; ADR-0003 solo-maintainer enforcement update pending.
 
 - Required scaffolding, standards, formatter/static-analysis configuration, GitHub templates, CI definitions and validators were created without production code.
 - ADR-0002 is accepted and supersedes the earlier planned `packages/application-packs/` layout with `inspection-packages/`.
 - CODEOWNERS assigns `@zamriares`, explicitly approved by Zamri Ares on 2026-09-02.
-- The local Git repository and public GitHub remote contain the TASK-0001 bootstrap baseline. Protected `main`, required checks, code-owner review, stale/last-push approval, conversation resolution, linear history, admin enforcement, force-push/deletion prevention and squash-only merge are configured. Actual independent approval and merge enforcement remain NOT VERIFIED until exercised by a pull request. Signed release evidence remains outside the authorised Stage 0 workflow scope.
+- The local Git repository and public GitHub remote contain the TASK-0001 bootstrap baseline. The last verified hosted settings require protected `main`, required checks, CODEOWNER review, stale/last-push approval, conversation resolution, linear history, admin enforcement, force-push/deletion prevention and squash-only merge. ADR-0003 supersedes the review requirement with solo-maintainer governance, but the required hosted setting change and protected merge evidence remain `NOT VERIFIED`. Signed release evidence remains outside the authorised Stage 0 workflow scope.
 
-Local and hosted evidence recorded on 2026-09-01 and 2026-09-02:
+Local and hosted evidence recorded from 2026-09-01 through 2026-09-03:
 
 - PASS: shell syntax for both validation scripts.
 - PASS: Node syntax for both validation modules and the ESLint/Prettier configurations.
@@ -123,5 +123,5 @@ Local and hosted evidence recorded on 2026-09-01 and 2026-09-02:
 - PASS: manual Stage 0 SBOM run `33589395444` completed successfully for `e5cb823e7a6a788cf9dbec780398d220ea1b2e4e`. Artifact `stage0-repository-sbom.spdx.json` has GitHub digest `sha256:23faee6f52567092b64382d1cd242157a2aa0b2d37883d7ee9ddc49b9adea917` and expires on 2026-09-16.
 - PASS: pull request `#1` is blocked by protected `main`; repository-baseline, secret-scan and vulnerability/misconfiguration checks passed.
 - PASS: after Dependency Graph activation, the `Dependency and licence review` rerun on pull request `#1` completed successfully in workflow run `33590223847`.
-- DEFERRED: independent code-owner approval. The owner directed that the second reviewer be ignored on 2026-09-02; the approved self-approval prohibition remains enabled and pull request `#1` remains blocked.
+- SUPERSEDED: independent code-owner approval. ADR-0003 accepted solo-maintainer governance on 2026-09-03. GitHub authors cannot approve their own pull requests, so hosted protection must retain pull requests and mandatory checks while setting required approvals to zero and disabling required CODEOWNER review and last-push approval. This hosted change is `NOT VERIFIED`.
 - UNAVAILABLE locally: Go, Ruff, mypy, pytest, ESLint, Prettier, TypeScript, actionlint, ShellCheck, markdownlint, Gitleaks, Trivy, Syft and Cosign execution.

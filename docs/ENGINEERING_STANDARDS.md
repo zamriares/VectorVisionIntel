@@ -31,13 +31,13 @@ Nested `AGENTS.md` files may strengthen local constraints but cannot weaken the 
 - Every change uses a pull request. Draft PRs cannot merge.
 - PR title format: `<TASK-NNNN>: <imperative summary>`.
 - The PR body states objective, scope, risk, tests with actual results, unavailable checks, compatibility/migration effects and rollback.
-- All required CI checks and all requested CODEOWNERS reviews must pass. The author cannot be the sole approver.
-- Safety/control, security/trust, public-contract, migration, signing/trust-store and release changes require Technical Lead approval plus the applicable owner; two-person approval applies once a second qualified owner is assigned.
+- All required CI checks must pass. Under ADR-0003 solo-maintainer mode, `@zamriares` is the sole CODEOWNER and may merge an owner-authored pull request after recording final-diff self-review; GitHub approving reviews and required CODEOWNER reviews are not required because authors cannot approve their own pull requests.
+- Safety/control, security/trust, public-contract, migration, signing/trust-store and release changes require explicit Technical Lead and applicable-owner approval recorded in the pull request. Those roles may be held by the same person only while ADR-0003 solo-maintainer mode applies; separately defined production two-person approvals are unchanged.
 - Squash merge is the only merge method. Merge commits and rebase merge are disabled.
 - The squash commit uses the approved PR title and retains the task ID. One PR addresses one approved task unless the task explicitly defines atomic cross-component scope.
 - Conversations must be resolved; stale approvals are dismissed after material changes.
 
-Remote GitHub ruleset evidence is required before this governance is considered enforced.
+Remote GitHub ruleset evidence is required before this governance is considered enforced. Required pull requests, strict required checks, resolved conversations, linear history, administrator enforcement, and force-push/deletion prevention remain mandatory; required approving reviews, CODEOWNER reviews, and last-push approval are disabled only as authorised by ADR-0003.
 
 ## 3. Commit and task traceability
 
