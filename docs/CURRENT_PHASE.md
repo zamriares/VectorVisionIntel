@@ -19,6 +19,7 @@ Review and approve the product boundary, architecture, security/portability requ
 - Manual Stage 0 SBOM run `33589395444` passed. The retained SPDX JSON artifact has GitHub digest `sha256:23faee6f52567092b64382d1cd242157a2aa0b2d37883d7ee9ddc49b9adea917` and expires on 2026-09-16.
 - Pull request `#1` passed all four required checks on final head `335540e8eb979b6ae3995517d2a2c844b539defe` in run `33695896174` and was squash-merged through protected `main` as `190b0562341fa95ad765c4fcdc8d00e4d356787a`.
 - DEC-001 through DEC-007 and the mandatory hardware, protocol, recovery, security, performance and 72-hour soak evidence remain open or blocked. No hardware or site acceptance claim has been made.
+- DEC-004 timing and reject-mechanism selection was explicitly deferred by Zamri Ares on 2026-09-03. It remains unresolved and continues to block Stage 0 exit; active decision work moves to DEC-005.
 
 ## Allowed work
 
