@@ -95,12 +95,12 @@ All planned public contracts; no implemented interface may exist at this stage.
 
 ## Repository-baseline result
 
-Status: Implemented locally; enforcement incomplete.
+Status: Implemented and hosted; independent-review enforcement evidence pending.
 
 - Required scaffolding, standards, formatter/static-analysis configuration, GitHub templates, CI definitions and validators were created without production code.
 - ADR-0002 is accepted and supersedes the earlier planned `packages/application-packs/` layout with `inspection-packages/`.
 - CODEOWNERS assigns `@zamriares`, explicitly approved by Zamri Ares on 2026-09-02.
-- The local Git repository and public GitHub remote now contain the TASK-0001 bootstrap baseline. The first hosted Stage 0 validation passed. GitHub rulesets, SBOM workflow execution and signed release evidence remain NOT VERIFIED pending remote enforcement and workflow evidence.
+- The local Git repository and public GitHub remote contain the TASK-0001 bootstrap baseline. Protected `main`, required checks, code-owner review, stale/last-push approval, conversation resolution, linear history, admin enforcement, force-push/deletion prevention and squash-only merge are configured. Actual independent approval and merge enforcement remain NOT VERIFIED until exercised by a pull request. Signed release evidence remains outside the authorised Stage 0 workflow scope.
 
 Local and hosted evidence recorded on 2026-09-01 and 2026-09-02:
 
@@ -118,4 +118,8 @@ Local and hosted evidence recorded on 2026-09-01 and 2026-09-02:
 - PASS: local Git repository on `main` with authorised `origin` set to `https://github.com/zamriares/VectorVisionIntel.git`.
 - PASS: bootstrap commit `4a7cbe522723134d418005f088b048302e2b2a86` pushed to `origin/main` on 2026-09-02.
 - PASS: hosted `Stage 0 validation` run `33589098380` completed successfully for the bootstrap commit.
-- UNAVAILABLE: GitHub ruleset evidence, Go, Ruff, mypy, pytest, ESLint, Prettier, TypeScript, actionlint, ShellCheck, markdownlint, Gitleaks history scanning, Trivy, Syft and Cosign execution.
+- PASS: hosted `Stage 0 validation` run `33589222920` completed successfully for evidence commit `e5cb823e7a6a788cf9dbec780398d220ea1b2e4e`.
+- PASS: authenticated GitHub API readback confirmed public `main`, squash-only merge, strict required checks (`Repository baseline`, `Secret scan`, `Vulnerability and misconfiguration scan`, `Dependency and licence review`), one required approval, CODEOWNERS review, stale-review dismissal, last-push approval, conversation resolution, linear history, admin enforcement, and disabled force-push/deletion.
+- PASS: manual Stage 0 SBOM run `33589395444` completed successfully for `e5cb823e7a6a788cf9dbec780398d220ea1b2e4e`. Artifact `stage0-repository-sbom.spdx.json` has GitHub digest `sha256:23faee6f52567092b64382d1cd242157a2aa0b2d37883d7ee9ddc49b9adea917` and expires on 2026-09-16.
+- NOT VERIFIED: independent code-owner approval, pull-request-only enforcement and dependency-review behavior on an actual pull request.
+- UNAVAILABLE locally: Go, Ruff, mypy, pytest, ESLint, Prettier, TypeScript, actionlint, ShellCheck, markdownlint, Gitleaks, Trivy, Syft and Cosign execution.
