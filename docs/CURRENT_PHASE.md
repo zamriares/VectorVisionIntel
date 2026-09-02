@@ -2,13 +2,23 @@
 
 Phase: Stage 0 — Product and engineering baseline  
 Status: Specification and repository-baseline work authorised; product implementation not authorised  
-Last updated: 2026-09-01  
+Last updated: 2026-09-02  
 
 Progress model: Dynamic and evidence-gated; no calendar delivery milestones. Dates record audit events only.  
 
 ## Current objective
 
 Review and approve the product boundary, architecture, security/portability requirements, development stages, initial hardware/protocol targets, and measurable acceptance criteria.
+
+## Development progress
+
+- TASK-0001 remains approved and in progress; Stage 0 exit has not been approved.
+- The Stage 0 specification, compatibility, governance, validation and repository-scaffolding baseline is hosted at `https://github.com/zamriares/VectorVisionIntel` with no product implementation.
+- Protected `main` is configured with squash-only merge, strict required checks, CODEOWNERS review, stale-review dismissal, last-push approval, resolved conversations, linear history, admin enforcement, and force-push/deletion prevention.
+- Pull request `#1` records governance and SBOM evidence. For evidence commit `57a046647cfafce11f52605211b6586812ec8412`, repository baseline, secret scan, vulnerability/misconfiguration scan, and dependency/licence review all passed.
+- Manual Stage 0 SBOM run `33589395444` passed. The retained SPDX JSON artifact has GitHub digest `sha256:23faee6f52567092b64382d1cd242157a2aa0b2d37883d7ee9ddc49b9adea917` and expires on 2026-09-16.
+- Pull request `#1` remains blocked by the approved independent-review requirement. The second reviewer was deferred on 2026-09-02; the control was not disabled or bypassed.
+- DEC-001 through DEC-007 and the mandatory hardware, protocol, recovery, security, performance and 72-hour soak evidence remain open or blocked. No hardware or site acceptance claim has been made.
 
 ## Allowed work
 
