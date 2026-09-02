@@ -14,10 +14,10 @@ Review and approve the product boundary, architecture, security/portability requ
 
 - TASK-0001 remains approved and in progress; Stage 0 exit has not been approved.
 - The Stage 0 specification, compatibility, governance, validation and repository-scaffolding baseline is hosted at `https://github.com/zamriares/VectorVisionIntel` with no product implementation.
-- Protected `main` was last verified with squash-only merge, strict required checks, CODEOWNERS review, stale-review dismissal, last-push approval, resolved conversations, linear history, admin enforcement, and force-push/deletion prevention. ADR-0003 now authorises solo-maintainer governance; the required hosted change to zero approvals with CODEOWNER-review and last-push approval disabled is `NOT VERIFIED`.
+- Protected `main` is configured for ADR-0003 solo-maintainer governance with zero required approvals, required CODEOWNER review disabled and last-push approval disabled. Authenticated readback confirmed strict required checks, resolved conversations, linear history, admin enforcement, and force-push/deletion prevention remain enabled.
 - Pull request `#1` records governance and SBOM evidence. For evidence commit `57a046647cfafce11f52605211b6586812ec8412`, repository baseline, secret scan, vulnerability/misconfiguration scan, and dependency/licence review all passed.
 - Manual Stage 0 SBOM run `33589395444` passed. The retained SPDX JSON artifact has GitHub digest `sha256:23faee6f52567092b64382d1cd242157a2aa0b2d37883d7ee9ddc49b9adea917` and expires on 2026-09-16.
-- Pull request `#1` remains blocked by the previously verified hosted independent-review settings. On 2026-09-03, ADR-0003 accepted solo-maintainer governance, but the hosted settings have not yet been changed or read back.
+- Pull request `#1` reports a clean merge state at head `ff4e3b0ec198eff13f65a15ed79046740572322d`; all four required checks passed in run `33695509663`. The protected squash merge has not yet been executed.
 - DEC-001 through DEC-007 and the mandatory hardware, protocol, recovery, security, performance and 72-hour soak evidence remain open or blocked. No hardware or site acceptance claim has been made.
 
 ## Allowed work
@@ -48,7 +48,7 @@ Review and approve the product boundary, architecture, security/portability requ
 - Vendor-neutral acquisition, integration protocols, initial controller families, and reference edge hardware classes approved as validation targets on 2026-09-01. Exact models, versions, mappings, and compatibility evidence remain open.
 - ADR-0001 accepted the reference-hardware targets and three compatibility classifications. Stage 0 evidence remains blocked pending exact engineering selections and required bench/soak results.
 - ADR-0002 accepted the GitHub monorepo, trunk-based governance, language boundaries, independent artefact versioning, supply-chain controls and Stage 0 engineering standards. Repository scaffolding and validation configuration were authorised on 2026-09-01; product implementation remains prohibited.
-- ADR-0003 accepted solo-CODEOWNER repository governance on 2026-09-03. Pull requests, mandatory checks and protected-main safeguards remain required, while approving-review, required CODEOWNER-review and last-push-approval requirements are disabled in solo-maintainer mode. Hosted enforcement remains `NOT VERIFIED` until updated and read back.
+- ADR-0003 accepted solo-CODEOWNER repository governance on 2026-09-03. Pull requests, mandatory checks and protected-main safeguards remain required, while approving-review, required CODEOWNER-review and last-push-approval requirements are disabled in solo-maintainer mode. Authenticated hosted readback verified this configuration on 2026-09-03.
 
 ## Approval record
 
